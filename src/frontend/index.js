@@ -2,9 +2,13 @@ import React from 'react'
 import { render } from 'react-dom'
 
 import Sample from './containers/Sample/state'
+import SampleForm from './containers/SampleForm/state'
 
 render(
-  <Sample />,
+  <div>
+    <Sample />
+    <SampleForm />
+  </div>,
   document.getElementById('root')
 )
 
