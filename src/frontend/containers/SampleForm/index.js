@@ -9,9 +9,10 @@ module.exports = function SampleForm (props) {
     onCheckboxChange,
 
     isSubmitting,
-    submitDisabled,
     onSubmitClick,
   } = props;
+
+  const submitDisabled = !inputValue || !checkboxChecked;
 
   return (<form>
     <input type="text"
